@@ -8,7 +8,7 @@ const NotFound = props => (
     </h1>
     <p>
     Content not found.
-    <Link to="/">Return to home</Link>
+    <Link to="/personal_site/">Return to home</Link>
     </p>
     </article>
 );
