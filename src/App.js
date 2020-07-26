@@ -29,7 +29,7 @@ class App extends Component {
           <StyleReset />
             <Router>
               <Switch>
-                <Route exact path="/personal_site/">
+                <Route exact path="/">
                   <Div
                     textColor = "black900"
                     minH="35vh"
@@ -183,7 +183,7 @@ class App extends Component {
                   }
                   </Container>
                 </Route>
-                <Route exact path={"/About"} render={ (routerProps) => <About routerProps={routerProps} />} />
+                <Route exact path={process.env.PUBLIC_URL/About} component={About} />
                 <Route component={NotFound}/>
               </Switch>
             </Router>

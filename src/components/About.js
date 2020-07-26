@@ -73,7 +73,7 @@ const About = props => {
                         <Button 
                         onClick={(e) => {
                         e.preventDefault();
-                        window.location.href="/personal_site"
+                        window.location.href="/"
                         }}
                         prefix={
                             <Icon
