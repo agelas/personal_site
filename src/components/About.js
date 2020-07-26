@@ -15,7 +15,7 @@ const About = props => {
         colors: {
           black900: "1d1d1e"
         }
-      };  
+    };  
 
     return(
         <StyletronProvider value = {engine} debug={debug} debugAfterHydration>
