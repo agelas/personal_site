@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Button, Icon, Text, Row, Col, Container, StyleReset, ThemeProvider} from 'atomize';
@@ -57,7 +57,7 @@ const HomePage = (props) => {
             //The row is where the three panels with the links are being held. The row has
             //three columns, each column holds a div, and embedded in the div is the button
             <Row d = "flex" flexDir = "row" justify = "space-between">
-                <Col size="4" bg = "sucess100" p="4rem">
+                <Col d = "flex" size="4" bg = "sucess100" p="4rem" align = "center">
                     <Div 
                     d="flex"
                     p="1rem" 
@@ -74,7 +74,7 @@ const HomePage = (props) => {
                     <AboutModal/>
                     </Div>
                 </Col>
-                <Col size="4" bg = "sucess100" p="4rem">
+                <Col d = "flex" size="4" bg = "sucess100" p="4rem" align = "center">
                     <Div 
                     d = "flex"
                     p="1rem" 
@@ -111,7 +111,7 @@ const HomePage = (props) => {
                     </Button> 
                     </Div>
                 </Col>
-                <Col size="4" bg = "sucess100" p="4rem">
+                <Col d = "flex" size="4" bg = "sucess100" p="4rem" align = "center">
                     <Div 
                     d = "flex"
                     p="1rem"

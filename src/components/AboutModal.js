@@ -101,8 +101,10 @@ class AboutModal extends Component {
         const {showModal} = this.state;
 
         return(
-            <div>
+            <Div d="flex" align="flex-start">
             <Button
+                d = "flex"
+                align = "center"
                 bg="info600"
                 hoverBg="info600"
                 rounded="circle"
@@ -126,7 +128,7 @@ class AboutModal extends Component {
                 isOpen={showModal}
                 onClose={() => this.setState({showModal: false})}
             />
-            </div>
+            </Div>
         );
     }
 }
