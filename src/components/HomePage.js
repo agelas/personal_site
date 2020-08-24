@@ -11,6 +11,7 @@ const HomePage = (props) => {
     const engine = new Styletron();
 
     const theme = {
+        colCount: 4,
         colors: {
           black900: "1d1d1e"
         }
@@ -45,19 +46,19 @@ const HomePage = (props) => {
             and Computer Science.
             </Text>
             </Div>
-            <Container
-            w="100rem"
+            <Div
+            w="100vw"
             d="flex"
             flexDir="column"
             align="center"
-            bg = "sucess100"
+            bg = "sucess100" 
             minH = "10rem"
             >
-            {
-            //The row is where the three panels with the links are being held. The row has
-            //three columns, each column holds a div, and embedded in the div is the button
+            
+            {/*The row is where the three panels with the links are being held. The row has
+            three columns, each column holds a div, and embedded in the div is the button*/}
             <Row d = "flex" flexDir = "row" justify = "space-between">
-                <Col d = "flex" size="4" bg = "sucess100" p="4rem" align = "center">
+                <Col d = "flex" size="3" bg = "sucess100" p="4rem" align = "center">
                     <Div 
                     d="flex"
                     p="1rem" 
@@ -66,7 +67,8 @@ const HomePage = (props) => {
                     rounded = "md" 
                     minW = "8rem" 
                     minH = "10rem"
-                    align="center"
+                    align ="center"
+                    justify = "center"
                     shadow="5"
                     border="3px solid"
                     borderColor="gray400"
@@ -74,7 +76,7 @@ const HomePage = (props) => {
                     <AboutModal/>
                     </Div>
                 </Col>
-                <Col d = "flex" size="4" bg = "sucess100" p="4rem" align = "center">
+                <Col d = "flex" size="3" bg = "sucess100" p="4rem" align = "center">
                     <Div 
                     d = "flex"
                     p="1rem" 
@@ -84,6 +86,7 @@ const HomePage = (props) => {
                     minW = "8rem" 
                     minH = "10rem"
                     align="center"
+                    justify = "center"
                     shadow="5"
                     border="3px solid"
                     borderColor="gray400"
@@ -111,7 +114,7 @@ const HomePage = (props) => {
                     </Button> 
                     </Div>
                 </Col>
-                <Col d = "flex" size="4" bg = "sucess100" p="4rem" align = "center">
+                <Col d = "flex" size="3" bg = "sucess100" p="4rem" align = "center">
                     <Div 
                     d = "flex"
                     p="1rem"
@@ -121,6 +124,7 @@ const HomePage = (props) => {
                     minW = "8rem" 
                     minH = "10rem" 
                     align = "center"
+                    justify = "center"
                     shadow="5"
                     border="3px solid"
                     borderColor="gray400"
@@ -143,14 +147,54 @@ const HomePage = (props) => {
                         p={{r:"1.5rem", l: "1rem"}}
                         shadow="3"
                         hoverShadow="4"
+                        d="flex"
+                        align = "center"
                     >
                         LinkedIn
                     </Button>
                     </Div>
                 </Col>
+                <Col d = "flex" size="3" bg = "sucess100" p="4rem" align = "center">
+                    <Div 
+                    d="flex"
+                    p="1rem" 
+                    bg = "success100" 
+                    hoverBg = "gray500"
+                    rounded = "md" 
+                    minW = "8rem" 
+                    minH = "10rem"
+                    align = "center"
+                    justify = "center"
+                    shadow="5"
+                    border="3px solid"
+                    borderColor="gray400"
+                    >
+                    <Button
+                    onClick = {(e) =>{
+                        e.preventDefault();
+                        window.location.href="https://www.linkedin.com/in/mathias-insley/"
+                    }}
+                        prefix={
+                        <Icon
+                            name="Rename"
+                            size="20px"
+                            color="white"
+                            m={{r: "0.5rem"}}
+                        />
+                        }
+                        bg="info600"
+                        rounded="circle"
+                        p={{r:"1.5rem", l: "1rem"}}
+                        shadow="3"
+                        hoverShadow="4"
+                    >
+                        Blog 
+                    </Button>
+                    </Div>
+                </Col>
             </Row>
-            }
-            </Container>
+            
+            </Div>
         </ThemeProvider>
       </StyletronProvider>
     );

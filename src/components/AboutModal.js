@@ -65,8 +65,7 @@ const ModalSize = ({ isOpen, onClose }) => {
                         Frankly, the only reason this website exists is because I got sort of put in a leadership role for
                         this research project that would need a website at some point. In other words I had a week to decide
                         between React or Angular (sorry Vue) JS. React won. And this grew out of my despereate attempt to wrap
-                        my head around React during that process. I'll be the first to admit that the way I built this website
-                        might be...abnormal to say the least. But there's still a lot I'm trying to learn. 
+                        my head around React during that process.  
                 </Text>
             </Div>
             <Div d="flex" justify="flex-end">
