@@ -15,7 +15,7 @@ const About = props => {
         colors: {
           black900: "1d1d1e"
         }
-      };  
+    };  
 
     return(
         <StyletronProvider value = {engine} debug={debug} debugAfterHydration>
@@ -73,7 +73,7 @@ const About = props => {
                         <Button 
                         onClick={(e) => {
                         e.preventDefault();
-                        window.location.href="/personal_site"
+                        window.location.href="/"
                         }}
                         prefix={
                             <Icon
