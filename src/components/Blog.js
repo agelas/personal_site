@@ -1,10 +1,10 @@
 import React from "react"
 import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
-import {Div, Row, Col, Button, Icon, Text, StyleReset, ThemeProvider, Container} from 'atomize';
-import { Link } from "react-router-dom"
+import {Div, Row, Col, Button, Icon, Text, StyleReset, ThemeProvider} from 'atomize';
 import bubbleground from '../double-bubble-outline/double-bubble-outline.png'
 import devance from '../Pictures/spauldevance.JPG'
+import antibes from '../Pictures/antibes.jpg'
 
 const Blog = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +23,7 @@ const Blog = props => {
                 <StyleReset />
                 <Div
                     textColor = "black900"
-                    h="70vw"
+                    h="120vw"
                     w="100vw"
                     d="flex"
                     flexDir="column"
@@ -34,7 +34,7 @@ const Blog = props => {
                     bgRepeat = "repeat"
                     >
                     <Row
-                        h="60vw"
+                        h="50vw" //This will control vertically the start of your ramblings
                         w="70vw"
                         d="flex"
                         bg="white"
@@ -75,7 +75,69 @@ const Blog = props => {
                         </Col>
                     
                     </Row>
+                    {/*Division for transition to book section*/}
+                    <Div
+                        h="20vw"
+                        w="70vw"
+                        d="flex"
+                        bg="sucess100"
+                        align="center"
+                        justify="center"
+                    >
+                        <Text
+                            textSize="heading"
+                            textDecor="overline"
+                            textWeight="500"
+                            textColor="black300"
+                        >
+                        Books
+                        </Text>
+                
+                    </Div>
+                    {/*Row which holds actual book musing type things*/}
+                    <Row
+                        h="50vw"
+                        w="70vw"
+                        d="flex"
+                        bg="white"
+                    >
+                        <Col
+                            h="50vw"
+                            w="15vw"
+                            bgImg={antibes}
+                            bgSize="cover"
+                        >
+                            
+                        </Col>
+                        <Col
+                            h="50vw"
+                            w="15vw"
+                            d="flex"
+                            bg="sucess100"
+                            justify= "center"
+                            align="top"
+                        >
+                            <Text
+                                h="15vw"
+                                w="30vw"
+                                d="flex"
+                                bg="sucess100"
+                                pos="static"
+                                textColor="black100"
+                                textSize="subheader"
+                                textAlign="center"
+                                p="2vw"
+                            >
+                            I like to consider myself a fairly avid reader. While I used to spend most of my time buried in works of fiction,
+                            these days most of my reading material comprises of academic journals and how-to books that deal
+                            with various technical matters.
+                            </Text>
+                        
+                        </Col>
+                    
+                    </Row>
                 </Div>
+            
                 <Div
                     h="5vw"
                     w="100vw"

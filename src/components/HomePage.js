@@ -1,8 +1,8 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
-import {Div, Button, Icon, Text, Row, Col, Container, StyleReset, ThemeProvider} from 'atomize';
+import {Div, Button, Icon, Text, Row, Col, StyleReset, ThemeProvider} from 'atomize';
 import bubbleground from '../double-bubble-outline/double-bubble-outline.png'
 import AboutModal from './AboutModal';
 import NotFound from './NotFound'
