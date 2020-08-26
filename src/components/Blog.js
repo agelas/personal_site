@@ -28,7 +28,7 @@ const Blog = props => {
                     d="flex"
                     flexDir="column"
                     align="center"
-                    p={{x:"1rem", y: "5rem"}}
+                    p={{x:"1rem", y: "5rem"}} //The y padding shifts row grid item down
                     bgImg = {bubbleground}
                     bgSize = "auto" //This made it seem to work a lot better
                     bgRepeat = "repeat"
@@ -52,7 +52,7 @@ const Blog = props => {
                                 w="20vw"
                                 d="flex"
                                 bg="sucess100"
-                                pos="fixed"
+                                pos="static"
                                 top="25%"
                                 textColor="black100"
                                 textSize="display1"
@@ -75,6 +75,38 @@ const Blog = props => {
                         </Col>
                     
                     </Row>
+                </Div>
+                <Div
+                    h="5vw"
+                    w="100vw"
+                    d="flex"
+                    bg="gray200"
+                    align="center"
+                    justify="center"
+                    p={{y: "1vw"}}
+                >
+                    <Button
+                    onClick = {(e) =>{
+                        e.preventDefault();
+                        window.location.href="/"
+                    }}
+                        prefix={
+                        <Icon
+                            name="Rename"
+                            size="20px"
+                            color="white"
+                            m={{r: "0.5rem"}}
+                        />
+                        }
+                        bg="info600"
+                        rounded="circle"
+                        p={{r:"1.5rem", l: "1rem"}}
+                        shadow="3"
+                        hoverShadow="4"
+                    >
+                        Home 
+                    </Button>
+                
                 </Div>
             </ThemeProvider>       
         </StyletronProvider>
