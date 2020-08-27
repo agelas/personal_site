@@ -5,6 +5,9 @@ import {Div, Row, Col, Button, Icon, Text, StyleReset, ThemeProvider} from 'atom
 import bubbleground from '../double-bubble-outline/double-bubble-outline.png'
 import devance from '../Pictures/spauldevance.JPG'
 import antibes from '../Pictures/antibes.jpg'
+import frenchCoffee from '../Pictures/frenchCoffee.jpg'
+import HOMLModal from './HOMLModal'
+import REModal from './REModal'
 
 const Blog = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +26,7 @@ const Blog = props => {
                 <StyleReset />
                 <Div
                     textColor = "black900"
-                    h="120vw"
+                    h="200vw" //This controls the height of the whole page basically
                     w="100vw"
                     d="flex"
                     flexDir="column"
@@ -71,9 +74,7 @@ const Blog = props => {
                             bgImg={devance}
                             bgSize="cover"
                         >
-                        
                         </Col>
-                    
                     </Row>
                     {/*Division for transition to book section*/}
                     <Div
@@ -114,10 +115,11 @@ const Blog = props => {
                             w="15vw"
                             d="flex"
                             bg="sucess100"
-                            justify= "center"
-                            align="top"
+                            justify= "top" //idk why but this seems to affect vertical positioning 
+                            align="center" //and this horizontal positioning
+                            flexDir="column"
                         >
-                            <Text
+                            <Div
                                 h="15vw"
                                 w="30vw"
                                 d="flex"
@@ -130,11 +132,73 @@ const Blog = props => {
                             >
                             I like to consider myself a fairly avid reader. While I used to spend most of my time buried in works of fiction,
                             these days most of my reading material comprises of academic journals and how-to books that deal
-                            with various technical matters.
-                            </Text>
+                            with CS stuff.
+                            </Div>
+                            <Div
+                                h="15vw"
+                                w="30vw"
+                                bg="sucess100"
+                            >
+                                <HOMLModal/> 
+                                <REModal/> 
+                            </Div>
+                            
+                        </Col>
+                    </Row>
+                    {/*Division for transition to food section*/}
+                    <Div
+                        h="20vw"
+                        w="70vw"
+                        d="flex"
+                        bg="sucess100"
+                        align="center"
+                        justify="center"
+                    >
+                        <Text
+                            textSize="heading"
+                            textDecor="overline"
+                            textWeight="500"
+                            textColor="black300"
+                        >
+                        Food
+                        </Text>
+                    </Div>
+                    <Row
+                        h="50vw" //This will control vertically the start of your ramblings
+                        w="70vw"
+                        d="flex"
+                        bg="white"
+                    >
+                        <Col
+                            h="50vw"
+                            w="15vw"
+                            d="flex"
+                            bg="sucess100"
+                            align="center"
+                            flexDir="column" //flexDir to column is the trick to get this up top
+                        >
+                            <Div
+                                h="15vw"
+                                w="30vw"
+                                d="flex"
+                                bg="sucess100"
+                                pos="static"
+                                textColor="black100"
+                                textSize="subheader"
+                                textAlign="center"
+                                p="2vw"
+                            >
+                                By no means am I a chef, but I'd like to think that I can hold my own in a kitchen if the need arises.
+                             </Div>
+                        </Col>
+                        <Col
+                            h="50vw"
+                            w="15vw"
+                            bgImg={frenchCoffee}
+                            bgSize="cover"
+                        >
                         
                         </Col>
-                    
                     </Row>
                 </Div>
             
