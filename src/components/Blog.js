@@ -8,6 +8,9 @@ import antibes from '../Pictures/antibes.jpg'
 import frenchCoffee from '../Pictures/frenchCoffee.jpg'
 import HOMLModal from './HOMLModal'
 import REModal from './REModal'
+import MLPPModal from './MLPPModal'
+import BrieDrawer from './BakedBrieSidedrawer'
+import DalgonaDrawer from './DalgonaSidedrawer'
 
 const Blog = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -141,6 +144,7 @@ const Blog = props => {
                             >
                                 <HOMLModal/> 
                                 <REModal/> 
+                                <MLPPModal/>
                             </Div>
                             
                         </Col>
@@ -189,6 +193,14 @@ const Blog = props => {
                                 p="2vw"
                             >
                                 By no means am I a chef, but I'd like to think that I can hold my own in a kitchen if the need arises.
+                             </Div>
+                             <Div
+                                h="15vw"
+                                w="30vw"
+                                bg="sucess100"
+                             >
+                                <DalgonaDrawer/>
+                                <BrieDrawer/>
                              </Div>
                         </Col>
                         <Col

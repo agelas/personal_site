@@ -167,7 +167,7 @@ const HomePage = (props) => {
                                 bg = "success100" 
                                 hoverBg = "gray500"
                                 rounded = "md" 
-                                minW = "8rem" 
+                                minW = "9.5rem" 
                                 minH = "10rem"
                                 align = "center"
                                 justify = "center"
@@ -201,7 +201,7 @@ const HomePage = (props) => {
                         </Row>
                         </Div>
                         </Route>
-                        <Route exact path={"/blog"} render= { (routerProps) => <Blog routerProps = {routerProps}/>}/>
+                        <Route path="/blog" exact component={Blog}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </Router>
