@@ -19,7 +19,7 @@ const BrieSizeSidedrawer = ({isOpen, onClose}) => {
                     the oven at 375 degrees Fahrenheit for 15 minutes. As I later found out when I got back home, one of 
                     the problems with this is that different bries have wildly different responses to getting baked. The brand
                     I had back in Baltimore kept pretty upright for some reason, but the brie I got from a nearby Whole Foods
-                    in back home just completely melted. So instead of a baked brie I ended up with a baked puddle of melted 
+                    back home just completely melted. So instead of a baked brie I ended up with a baked puddle of melted 
                     cheese. Pretty dissapointing. I got around this by cutting up my bries into smaller chunks, slathering the 
                     same ingredients on, and wrapping them in smaller puff pastry sheets so that the whole conoction would 
                     fit inside a cupcake mold. So now if the brie completely melts, it won't leak out the side because the 

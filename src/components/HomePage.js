@@ -16,7 +16,9 @@ const HomePage = (props) => {
     const theme = {
         colCount: 4,
         colors: {
-          black900: "1d1d1e"
+          black900: "1d1d1e",
+          purple700: "#6F5CC3",
+          purple800: "#553EB5"
         }
       }; 
     

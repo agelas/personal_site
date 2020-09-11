@@ -50,10 +50,10 @@ const ModalSize = ({ isOpen, onClose }) => {
                     I had a thing for chemistry in high school, so at first I entered as a Chemical & Biomolecular 
                     Engineering (ChemBE) major, but I soon realized that ChemBE was less chemistry and more a flavor of
                     math I wasn't a huge fan of (like no offense but solving triple integrals to find heat flux down a pipe
-                    just isn't my thing). So then I ended up in Materials Science & Engineering (MSE), which was more chemistry 
-                    less math and have been there ever since. Oh and I also picked up a CS minor along the way, and for some
+                    just isn't my thing). But then I discovered Materials Science & Engineering (MSE), which was more chemistry 
+                    less math and have been there ever since. I also picked up a CS minor along the way, and for some
                     reason I do a lot more CS stuff now. Probably because CS requires a computer and a lot of patience, whereas
-                    MSE requres a whole lab and a lot of patience but who knows.
+                    MSE requires a computer, a whole laboratory, and a lot of patience but who knows.
                 </Text>
                 About This Website
                 <Text

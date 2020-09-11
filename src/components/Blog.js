@@ -9,6 +9,7 @@ import frenchCoffee from '../Pictures/frenchCoffee.jpg'
 import HOMLModal from './HOMLModal'
 import REModal from './REModal'
 import MLPPModal from './MLPPModal'
+import TemModal from './TemeraireModal.js'
 import BrieDrawer from './BakedBrieSidedrawer'
 import DalgonaDrawer from './DalgonaSidedrawer'
 
@@ -145,6 +146,7 @@ const Blog = props => {
                                 <HOMLModal/> 
                                 <REModal/> 
                                 <MLPPModal/>
+                                <TemModal/>
                             </Div>
                             
                         </Col>
