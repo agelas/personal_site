@@ -9,7 +9,8 @@ import frenchCoffee from '../Pictures/frenchCoffee.jpg'
 import HOMLModal from './HOMLModal'
 import REModal from './REModal'
 import MLPPModal from './MLPPModal'
-import TemModal from './TemeraireModal.js'
+import TemModal from './TemeraireModal'
+import LevModal from './LeviathanModal'
 import BrieDrawer from './BakedBrieSidedrawer'
 import DalgonaDrawer from './DalgonaSidedrawer'
 
@@ -147,6 +148,7 @@ const Blog = props => {
                                 <REModal/> 
                                 <MLPPModal/>
                                 <TemModal/>
+                                <LevModal/>
                             </Div>
                             
                         </Col>
@@ -232,7 +234,7 @@ const Blog = props => {
                     }}
                         prefix={
                         <Icon
-                            name="Rename"
+                            name="HomeSolid"
                             size="20px"
                             color="white"
                             m={{r: "0.5rem"}}
