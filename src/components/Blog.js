@@ -216,6 +216,50 @@ const Blog = props => {
                         
                         </Col>
                     </Row>
+                    {/*Div for transition to blog part*/}
+                    <Div
+                        h="20vw"
+                        w="70vw"
+                        d="flex"
+                        bg="sucess100"
+                        align="center"
+                        justify="center"
+                    >
+                        <Text
+                            textSize="heading"
+                            textDecor="overline"
+                            textWeight="500"
+                            textColor="black300"
+                        >
+                        Rambles
+                        </Text>
+                    </Div>
+                    <Row
+                        h="50vw" //This will control vertically the start of your ramblings
+                        w="70vw"
+                        d="flex"
+                        justify="center"
+                        align="center"
+                        bg="black"
+                    >
+                        <Col
+                            size="10" //I have no clue where size comes from tbh
+                            h="15vw"
+                            bg="gray300"
+                            d="flex"
+                            overflow="visible scroll"
+                            rounded="xl"
+                        >
+                            <Text
+                                textSize = "title"
+                                textWeight = "500"
+                            >
+                                Well {"\n"}
+                                this
+                            </Text>
+                            
+                        </Col>
+                    </Row>
                 </Div>
             
                 <Div
