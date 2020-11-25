@@ -7,6 +7,8 @@ import bubbleground from '../double-bubble-outline/double-bubble-outline.png'
 import AboutModal from './AboutModal';
 import NotFound from './NotFound'
 import Blog from './Blog'
+import Hello_world from './blogPosts/Hello-world'
+import Bonjour from './blogPosts/Bonjour'
 
 const HomePage = (props) => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -204,6 +206,8 @@ const HomePage = (props) => {
                         </Div>
                         </Route>
                         <Route path="/blog" exact component={Blog}/>
+                        <Route path="/Hello_world" exact component={Hello_world}/>
+                        <Route path="/Bonjour" exact component={Bonjour}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </Router>

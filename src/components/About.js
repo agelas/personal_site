@@ -43,11 +43,10 @@ const About = props => {
                             I grew up in the Bay Area before heading off the the East Coast to attend Johns Hopkins University.
                             I had a thing for chemistry in high school, so at first I entered as a Chemical & Biomolecular 
                             Engineering (ChemBE) major, but I soon realized that ChemBE was less chemistry and more a flavor of
-                            math I wasn't a huge fan of (like no offense but solving triple integrals to find heat flux down a pipe
-                            just isn't my thing). So then I ended up in Materials Science & Engineering (MSE), which was more chemistry 
+                            math I wasn't a huge fan of (no offense but solving triple integrals to find heat flux down a pipe
+                            just isn't my thing). So then I ended up in Materials Science & Engineering (MSE), which was more chemistry, 
                             less math and have been there ever since. Oh and I also picked up a CS minor along the way, and for some
-                            reason I do a lot more CS stuff now. Probably because CS requires a computer and a lot of patience, whereas
-                            MSE requres a whole lab and a lot of patience but who knows.  
+                            reason I do a lot more CS stuff now. Probably because CS doesn't require a whole laboratory but who knows.  
                         </Text> 
                         About This Website
                         <Text
@@ -58,9 +57,8 @@ const About = props => {
                         >
                             Frankly, the only reason this website exists is because I got sort of put in a leadership role for
                             this research project that would need a website at some point. In other words I had a week to decide
-                            between React or Angular (sorry Vue) JS. React won. And this grew out of my despereate attempt to wrap
-                            my head around React during that process. I'll be the first to admit that the way I built this website
-                            might be...abnormal to say the least. But there's still a lot I'm trying to learn. 
+                            between React or Angular (sorry Vue) JS. React won. This website grew out of that learning process, and I've
+                            been having fun trying out new things here. 
                         </Text>
                     </Div>
                     <Div

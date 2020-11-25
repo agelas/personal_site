@@ -1,21 +1,21 @@
 import React, {Component} from 'react'
-import {Div, Button, Modal, Icon, Text, StyleReset, ThemeProvider} from 'atomize'
-import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
-import {Client as Styletron} from 'styletron-engine-atomic';
+import {Div, Button, Modal, Icon, Text} from 'atomize'
+//import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
+//import {Client as Styletron} from 'styletron-engine-atomic';
 import bubbleground from '../double-bubble-outline/double-bubble-outline.png'
 
 
 const ModalSize = ({ isOpen, onClose }) => {
 
-    const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
+    //const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
     //Create a client engine instance
-    const engine = new Styletron();
+    //const engine = new Styletron();
 
-    const theme = {
+    /*const theme = {
         colors: {
             black900: "1d1d1e"
         }
-    }; 
+    }; */
 
     return (
         
@@ -46,14 +46,13 @@ const ModalSize = ({ isOpen, onClose }) => {
                     textAlign = "center"
                     p={{l:"3rem", r:"3rem", y:"2rem"}}
                 >
-                    I grew up in the Bay Area before heading off the the East Coast to attend Johns Hopkins University.
-                    I had a thing for chemistry in high school, so at first I entered as a Chemical & Biomolecular 
-                    Engineering (ChemBE) major, but I soon realized that ChemBE was less chemistry and more a flavor of
-                    math I wasn't a huge fan of (like no offense but solving triple integrals to find heat flux down a pipe
-                    just isn't my thing). But then I discovered Materials Science & Engineering (MSE), which was more chemistry 
-                    less math and have been there ever since. I also picked up a CS minor along the way, and for some
-                    reason I do a lot more CS stuff now. Probably because CS requires a computer and a lot of patience, whereas
-                    MSE requires a computer, a whole laboratory, and a lot of patience but who knows.
+                I grew up in the Bay Area before heading off the the East Coast to attend Johns Hopkins University.
+                I had a thing for chemistry in high school, so at first I entered as a Chemical & Biomolecular 
+                Engineering (ChemBE) major, but I soon realized that ChemBE was less chemistry and more a flavor of
+                math I wasn't a huge fan of (no offense but solving triple integrals to find heat flux down a pipe
+                just isn't my thing). So then I ended up in Materials Science & Engineering (MSE), which was more chemistry, 
+                less math and have been there ever since. Oh and I also picked up a CS minor along the way, and for some
+                reason I do a lot more CS stuff now. Probably because CS doesn't require a whole laboratory but who knows.
                 </Text>
                 About This Website
                 <Text
@@ -62,10 +61,10 @@ const ModalSize = ({ isOpen, onClose }) => {
                     textAlign = "center"
                     p={{l:"3rem", r:"3rem", y:"2rem"}}
                     >
-                        Frankly, the only reason this website exists is because I got sort of put in a leadership role for
-                        this research project that would need a website at some point. In other words I had a week to decide
-                        between React or Angular (sorry Vue) JS. React won. And this grew out of my despereate attempt to wrap
-                        my head around React during that process.  
+                    Frankly, the only reason this website exists is because I got sort of put in a leadership role for
+                    this research project that would need a website at some point. In other words I had a week to decide
+                    between React or Angular (sorry Vue) JS. React won. This website grew out of that learning process, and I've
+                    been having fun trying out new things here.  
                 </Text>
             </Div>
             <Div d="flex" justify="flex-end">

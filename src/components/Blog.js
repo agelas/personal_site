@@ -13,6 +13,9 @@ import TemModal from './TemeraireModal'
 import LevModal from './LeviathanModal'
 import BrieDrawer from './BakedBrieSidedrawer'
 import DalgonaDrawer from './DalgonaSidedrawer'
+import BlogCard from './BlogCard'
+
+//For future reference remember that user-defined components like the one's being imported above must be capitalized in JSX
 
 const Blog = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -231,70 +234,22 @@ const Blog = props => {
                             textWeight="500"
                             textColor="black300"
                         >
-                        Rambles
+                        Ramblings
                         </Text>
                     </Div>
                     <Row
                         h="50vw" //This will control vertically the start of your ramblings
                         w="70vw"
                         d="flex"
-                        justify="center"
-                        align="center"
+                        flexDir = "row"
+                        p = "1vw"
+                        justify="space-around"
+                        //align="center"
                         bg="white"
                     >
-                        <Col
-                            size="10" //I have no clue where size comes from tbh
-                            h="15vw"
-                            bg="gray300"
-                            d="flex"
-                            flexDir="column"
-                            overflow="visible scroll"
-                            rounded="xl"
-                        >
-                            <Text
-                              textSize = "title"
-                                textWeight = "500"
-                            >
-                                As cross as two branches 
-                            </Text>
-                            <Text>
-                                I'll admit it. I don't like saying I don't know something, while at the same time I also have no issue 
-                                getting mad at people for doing the exact same thing. Case in point, that software project I'm working
-                                on for modeling COVID-19 spread is comprised mostly of JHU undergrads. Most if not all of them have taken
-                                a class called Intermediate Programming, which is the first place many of these people are introduced to 
-                                git. It's good to get the exposure early on, but unfortunately that exposure takes the 
-                                form of 'git add', 'git commit', and 'git push'. And that's about it. And apparently some people think
-                                that's enough to qualify them to say that they are 'experienced' with git. So when I asked people at the
-                                beginning of this semester if they were comfortable with branching so that we can have parallel lines of
-                                software development across the 45 people in 11 different timezones, basically everyone was said they were.
-                                I'm sure you can guess where this is going. I can't even count the amount of times I've walked people through
-                                stashing their workspaces or rebasing their commits or how to simply switch branches. I honestly never would
-                                have guessed that managing a software project would require so much hands-on supervision and hand-holding. 
-                            </Text>
-                            <Text
-                                textSize = "title"
-                                textWeight = "500"
-                            >
-                                Flashbacks and like not the good kind
-                            </Text>
-                            <Text>
-                                Apparently my parents were right and it's a small world. As I was leaving CharMar the other day I saw a
-                                face from my high school speech & debate career that I thought I'd never see again. He competed for my
-                                high school's rival and was apparently one heck of a speaker. This was according to my coach, who for some
-                                reason thought he was the gold standard for the new type of speech and debaters she was trying to create
-                                the year before she retired to go make jewelry. Not to brag but like the one time we went head-to-head at
-                                a speech event I came out ranked higher. But anyways, Johns Hopkins was hosting some college debate event
-                                and there this guy was just waiting for an Uber at the bottom of the beach (this giant grass oval at
-                                JHU that looks nothing like a beach but is called so anyways) with a bunch of speech and debate people. 
-                                I guess I never really thought anyone from my part of the high school speech and debate world would want to
-                                keep doing it in college. Besides the people who were quite literally obsessed with arguing, literally 
-                                everyone I knew was not having a good time. This was partly because we as high schoolers put an excessive
-                                amount of pressure on ourselves to do well for the sake of college, partly because we were in the most 
-                                competitive league in the country, partly because every school expected wins from their students. Perfect 
-                                combination.    
-                            </Text>
-                            
-                        </Col>
+                        {/*It takes like 6 of these to get on the next line btw*/}
+                        <BlogCard title = "Bonjour" date = "10/18/2020" postURL = "/Bonjour"/> 
+                        <BlogCard title = "Hello World" date = "10/15/2020" postURL = "/hello_world" />                  
                     </Row>
                 </Div>
             

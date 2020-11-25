@@ -28,21 +28,15 @@ const ModalSize = ({ isOpen, onClose }) => {
                     textAlign = "center"
                     p={{l:"3rem", r:"3rem", y:"2rem"}}
                 >
-                    [Spoilers-ish] So this is actually a fictional series by Naomi Novik that I got back into recently over my Summer because I could occasionally
-                    squeeze in an hour or so of leisure reading believe it or not. When it comes to fiction, I'm a big fan of
-                    alternative-history type books. I guess it's nice to mull on what might have been, especially with 2020 going the 
-                    way it is. At the time of this writing California is quite literally on fire and it looks like someone placed a 
-                    Bladerunner-inspired VSCO filter on the sky. Anyways, the Temeraire series follows a British navy captain during
-                    the Napoleonic Wars. And he gets a dragon. And so do a lot of other people. So not only do you have massive land
-                    and naval battles playing out in Europe, but you also have 15-ton dragons in the sky carrying crews of soldiers
-                    going at it in the sky over Europe as well. In this universe the dragons can speak and are pretty smart and also have
-                    attachment issues to their humans and that plays out in a lot of interesting way. One of the things I really liked is 
-                    that there was a whole different geo-political landscape that had to be accounted for during this time, which is dealt
-                    with pretty extensively throughout the 9 books in this series. So, for example, Europe had a pretty difficult time
-                    colonizing the world due to the presence of these dragons. Like the Aztec Empire was still around in 1800 because a 
-                    dragon ate Hernan Cortes, which is pretty understandable. And for aspiring European colonists, gaining any footholds
-                    in Asia was next to impossible because there existed the slight problem of 10-ton dragons that can breathe a typhoon
-                    at you if you annoy them. If you ever have the time I would highly recommend giving this series a try.   
+                    [Spoilers-ish] Imagine a world where any ethical considerations regarding the testing/genetic manipulation of
+                    animals just went out the window. So people created very bizarre and very deadly creatures for war. We'll call
+                    those people the "Allied Powers". And then imagine there also existed people who built equally deadly and bizarre
+                    machines. Call those people the "Central Powers". And yeah now you have an alternative fiction universe based 
+                    on World War 1. This is a trilogy that mostly takes place on a blimp made out of whale, if that makes any sense,
+                    and follows two teens from different sides of the war who are struggling to keep their identities a secret while the
+                    world is imploding on itself. This series has a very steam-punk vibe to it and is a great read for anyone who has the 
+                    time to. Interspersed throughout the novels are some really vivid illustrations as well that do a fantastic job of
+                    bringing the novels to life.  
                 </Text>
             </Div>
             <Div d="flex" justify="flex-end">
@@ -64,7 +58,7 @@ const ModalSize = ({ isOpen, onClose }) => {
     );
 };
 
-class TemModal extends Component {
+class LevModal extends Component {
     constructor(props) {
         super(props);
         this.state={
@@ -78,8 +72,8 @@ class TemModal extends Component {
         //Need to set up some colors for our button
         const theme = {
             colors: {
-            purple600: "#9C8FD6",
-            purple700: "#6F5CC3"
+            lightGreen600: "#66D30D",
+            lightGreen700: "#499609"
             }
         }; 
 
@@ -87,15 +81,15 @@ class TemModal extends Component {
             <ThemeProvider theme={theme}>
             <Div d="flex" align="flex-start">
                 <Button
-                    bg="purple600"
-                    hoverBg="purple700"
+                    bg="lightGreen600"
+                    hoverBg="lightGreen700"
                     rounded="circle"
                     m={{b: "1rem"}}
                     shadow="3"
                     hoverShadow="4"
                     onClick={() => this.setState({showModal: true})}
                 >
-                    Temeraire 
+                    Leviathan Trilogy 
                 </Button>
                 <ModalSize
                     isOpen={showModal}
@@ -106,4 +100,4 @@ class TemModal extends Component {
         );
     }
 }
-export default TemModal;
+export default LevModal;

@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import {Div, Button, Modal, Text} from 'atomize'
-import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
-import {Client as Styletron} from 'styletron-engine-atomic';
+//import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
+//import {Client as Styletron} from 'styletron-engine-atomic';
 
 
 const ModalSize = ({ isOpen, onClose }) => {
 
-    const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
+    //const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
     //Create a client engine instance
-    const engine = new Styletron();
+    //const engine = new Styletron();
 
     return (
         
