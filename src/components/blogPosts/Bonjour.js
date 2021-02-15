@@ -3,6 +3,8 @@ import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Button, Icon, Text, StyleReset, ThemeProvider} from 'atomize';
 
+import background from "./wiggle.svg";
+
 const Bonjour = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
     //Create a client engine instance
@@ -18,12 +20,12 @@ const Bonjour = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                <Div h = "40vw" w = "100vw" d = "flex" bg = "gray500" align = "center" justify = "center">
-                    <Div h = "25vw" w = "80vw" d =  "flex" bg = "white" align = "center" justify = "center" flexDir = "column">
-                        <Text textSize = "heading" textWeight = "700">
+                <Div h = "55vw" w = "100vw" d = "flex" bg = "gray500" align = "center" justify = "center" bg = "white" bgImg = {background}>
+                    <Div h = "25vw" w = "80vw" d =  "flex" bg = "white" align = "center" justify = "center" flexDir = "column" >
+                        <Text textSize = "heading" textWeight = "700" p = "1rem">
                             Bonjour
                         </Text> 
-                        <Text p = "5rem">
+                        <Text p = "5rem" overflow = "auto">
                             So I recently started learning French at Hopkins for two reasons. First, language classes get me more credits than a 
                             normal humanities class- and I need to fulfill my distribution requirements. Second, I enjoy visiting France and I figured
                             it might be helpful to have a grasp of the language so I'm not confined to the super tourist-y areas. The last time I was

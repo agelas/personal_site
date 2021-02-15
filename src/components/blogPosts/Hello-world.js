@@ -3,6 +3,8 @@ import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Button, Icon, Text, StyleReset, ThemeProvider} from 'atomize';
 
+import background from "./wiggle.svg";
+
 const Hello_world = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
     //Create a client engine instance
@@ -18,7 +20,7 @@ const Hello_world = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                <Div h = "40vw" w = "100vw" d = "flex" bg = "gray500" align = "center" justify = "center">
+                <Div h = "55vw" w = "100vw" d = "flex" bg = "gray500" align = "center" justify = "center" bg = "white" bgImg = {background}>
                     <Div h = "20vw" w = "80vw" d =  "flex" bg = "white" align = "center" justify = "center" flexDir = "column">
                         <Text textSize = "heading" textWeight = "700">
                             Hello World
