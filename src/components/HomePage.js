@@ -9,6 +9,9 @@ import NotFound from './NotFound'
 import Blog from './Blog'
 import Hello_world from './blogPosts/Hello-world'
 import Bonjour from './blogPosts/Bonjour'
+import Zoom1 from './blogPosts/Zoom1'
+import Zoom2 from './blogPosts/Zoom2'
+import Safflower from './blogPosts/Safflower'
 
 const HomePage = (props) => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -208,6 +211,9 @@ const HomePage = (props) => {
                         <Route path="/blog" exact component={Blog}/>
                         <Route path="/Hello_world" exact component={Hello_world}/>
                         <Route path="/Bonjour" exact component={Bonjour}/>
+                        <Route path="/Zoom1" exact component={Zoom1}/>
+                        <Route path="/Zoom2" exact component={Zoom2}/>
+                        <Route path="/Safflower" exact component={Safflower}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </Router>

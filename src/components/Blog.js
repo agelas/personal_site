@@ -248,6 +248,9 @@ const Blog = props => {
                         bg="white"
                     >
                         {/*It takes like 6 of these to get on the next line btw*/}
+                        <BlogCard title = "Safflower Oil" date = "1/28/2021" postURL = "/Safflower"/>
+                        <BlogCard title = "Zoom U Pt 2" date = "12/26/2020" postURL = "/Zoom2"/>
+                        <BlogCard title = "Zoom U Pt 1" date = "12/26/2020" postURL = "/Zoom1"/>
                         <BlogCard title = "Bonjour" date = "10/18/2020" postURL = "/Bonjour"/> 
                         <BlogCard title = "Hello World" date = "10/15/2020" postURL = "/hello_world" />                  
                     </Row>
