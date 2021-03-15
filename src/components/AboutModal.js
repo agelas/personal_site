@@ -2,20 +2,10 @@ import React, {Component} from 'react'
 import {Div, Button, Modal, Icon, Text} from 'atomize'
 //import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 //import {Client as Styletron} from 'styletron-engine-atomic';
-import bubbleground from '../double-bubble-outline/double-bubble-outline.png'
+import bubbleground from '../double-bubble-outline/dark-honeycomb.png'
 
 
 const ModalSize = ({ isOpen, onClose }) => {
-
-    //const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
-    //Create a client engine instance
-    //const engine = new Styletron();
-
-    /*const theme = {
-        colors: {
-            black900: "1d1d1e"
-        }
-    }; */
 
     return (
         
@@ -26,9 +16,13 @@ const ModalSize = ({ isOpen, onClose }) => {
         maxW="100vw"
         m="0"
         h="100vh"
+        bg = "darkBg100"
+        d = "flex"
+        flexDir = "column"
+        align = "start"
         >
             <Div
-                textColor = "black900"
+                textColor = "white"
                 minH="auto" //Yeah idk how to make this fill hopefully it scales
                 w="100vw"
                 d="flex"
@@ -41,7 +35,7 @@ const ModalSize = ({ isOpen, onClose }) => {
             >
                 A Little About Me
                 <Text
-                    textColor = "black600"
+                    textColor = "white"
                     textSize = "title"
                     textAlign = "center"
                     p={{l:"3rem", r:"3rem", y:"2rem"}}
@@ -56,7 +50,7 @@ const ModalSize = ({ isOpen, onClose }) => {
                 </Text>
                 About This Website
                 <Text
-                    textColor = "black600"
+                    textColor = "white"
                     textSize = "title"
                     textAlign = "center"
                     p={{l:"3rem", r:"3rem", y:"2rem"}}
@@ -68,15 +62,8 @@ const ModalSize = ({ isOpen, onClose }) => {
                 </Text>
             </Div>
             <Div d="flex" justify="flex-end">
-                <Button
-                    onClick={onClose}
-                    bg="gray200"
-                    textColor="medium"
-                    m={{r:"1rem"}}
-                >
-                Close
-                </Button>
-                <Button onClick={onClose} bg="info700">
+    
+                <Button onClick={onClose} bg="buttonBlue">
                     OK
                 </Button>
                 
@@ -103,7 +90,7 @@ class AboutModal extends Component {
             <Button
                 d = "flex"
                 align = "center"
-                bg="info600"
+                bg="buttonBlue"
                 hoverBg="info600"
                 rounded="circle"
                 p={{r:"1.5rem", l: "1rem"}}

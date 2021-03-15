@@ -2,7 +2,7 @@ import React from "react"
 import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Row, Col, Button, Icon, Text, StyleReset, ThemeProvider} from 'atomize';
-import bubbleground from '../double-bubble-outline/double-bubble-outline.png'
+import bubbleground from '../double-bubble-outline/dark-honeycomb.png'
 import devance from '../Pictures/spauldevance.JPG'
 import antibes from '../Pictures/antibes.jpg'
 import frenchCoffee from '../Pictures/frenchCoffee.jpg'
@@ -24,7 +24,8 @@ const Blog = props => {
 
     const theme = {
         colors: {
-          black900: "1d1d1e"
+          black900: "1d1d1e",
+          darkBg100: "#222222"
         }
     };
       
@@ -54,7 +55,7 @@ const Blog = props => {
                             h="50vw"
                             w="15vw"
                             d="flex"
-                            bg="sucess100"
+                            bg="darkBg100"
                             justify= "center"
                             align="center"
                         >
@@ -62,10 +63,10 @@ const Blog = props => {
                                 h="30vw"
                                 w="20vw"
                                 d="flex"
-                                bg="sucess100"
+                                bg="darkBg100"
                                 pos="static"
                                 top="25%"
-                                textColor="black100"
+                                textColor="white"
                                 textSize="display1"
                                 textAlign="center"
                                 align="center"
@@ -97,7 +98,7 @@ const Blog = props => {
                             textSize="heading"
                             textDecor="overline"
                             textWeight="500"
-                            textColor="black300"
+                            textColor="gray700"
                         >
                         Books
                         </Text>
@@ -122,7 +123,7 @@ const Blog = props => {
                             h="50vw"
                             w="15vw"
                             d="flex"
-                            bg="sucess100"
+                            bg="darkBg100"
                             justify= "top" //idk why but this seems to affect vertical positioning 
                             align="center" //and this horizontal positioning
                             flexDir="column"
@@ -131,9 +132,9 @@ const Blog = props => {
                                 h="15vw"
                                 w="30vw"
                                 d="flex"
-                                bg="sucess100"
+                                bg="darkBg100"
                                 pos="static"
-                                textColor="black100"
+                                textColor="gray700"
                                 textSize="subheader"
                                 textAlign="center"
                                 p="2vw"
@@ -141,6 +142,12 @@ const Blog = props => {
                             I like to consider myself a fairly avid reader. While I used to spend most of my time buried in works of fiction,
                             these days most of my reading material comprises of academic journals and how-to books that deal
                             with CS stuff.
+                            </Div>
+                            <Div
+                                h="5vw"
+                                bg="sucess100"
+                            >
+                                
                             </Div>
                             <Div
                                 h="15vw"
@@ -184,7 +191,7 @@ const Blog = props => {
                             h="50vw"
                             w="15vw"
                             d="flex"
-                            bg="sucess100"
+                            bg="darkBg100"
                             align="center"
                             flexDir="column" //flexDir to column is the trick to get this up top
                         >
@@ -192,9 +199,9 @@ const Blog = props => {
                                 h="15vw"
                                 w="30vw"
                                 d="flex"
-                                bg="sucess100"
+                                bg="darkBg100"
                                 pos="static"
-                                textColor="black100"
+                                textColor="white"
                                 textSize="subheader"
                                 textAlign="center"
                                 p="2vw"
@@ -245,7 +252,7 @@ const Blog = props => {
                         p = "1vw"
                         justify="space-around"
                         //align="center"
-                        bg="white"
+                        bg="darkBg100"
                     >
                         {/*It takes like 6 of these to get on the next line btw*/}
                         <BlogCard title = "Safflower Oil" date = "1/28/2021" postURL = "/Safflower"/>
@@ -260,7 +267,7 @@ const Blog = props => {
                     h="5vw"
                     w="100vw"
                     d="flex"
-                    bg="gray200"
+                    bg="darkBg100"
                     align="center"
                     justify="center"
                     p={{y: "1vw"}}
