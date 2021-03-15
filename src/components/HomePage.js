@@ -12,6 +12,7 @@ import Bonjour from './blogPosts/Bonjour'
 import Zoom1 from './blogPosts/Zoom1'
 import Zoom2 from './blogPosts/Zoom2'
 import Safflower from './blogPosts/Safflower'
+import Semicolons from './blogPosts/Semicolons'
 
 const HomePage = (props) => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -218,6 +219,7 @@ const HomePage = (props) => {
                         <Route path="/Zoom1" exact component={Zoom1}/>
                         <Route path="/Zoom2" exact component={Zoom2}/>
                         <Route path="/Safflower" exact component={Safflower}/>
+                        <Route path="/Semicolons" exact component={Semicolons}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </Router>

@@ -12,7 +12,9 @@ const Bonjour = props => {
 
     const theme = {
         colors: {
-          black900: "1d1d1e"
+          black900: "1d1d1e",
+          darkBg100: "#222222",
+          buttonBlue: "#336699"
         }
     };
 
@@ -20,12 +22,12 @@ const Bonjour = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                <Div h = "55vw" w = "100vw" d = "flex" bg = "gray500" align = "center" justify = "center" bg = "white" bgImg = {background}>
-                    <Div h = "25vw" w = "80vw" d =  "flex" bg = "white" align = "center" justify = "center" flexDir = "column" >
-                        <Text textSize = "heading" textWeight = "700" p = "1rem">
+                <Div h = "55vw" w = "100vw" d = "flex" align = "center" justify = "center" bg = "darkBg100" bgImg = {background}>
+                    <Div h = "25vw" w = "80vw" d =  "flex" bg = "darkBg100" align = "center" justify = "center" flexDir = "column" >
+                        <Text textSize = "heading" textWeight = "700" textColor = "white" p = "1rem">
                             Bonjour
                         </Text> 
-                        <Text p = "5rem" overflow = "auto">
+                        <Text p = "5rem" overflow = "auto" textColor = "white">
                             So I recently started learning French at Hopkins for two reasons. First, language classes get me more credits than a 
                             normal humanities class- and I need to fulfill my distribution requirements. Second, I enjoy visiting France and I figured
                             it might be helpful to have a grasp of the language so I'm not confined to the super tourist-y areas. The last time I was
@@ -46,7 +48,7 @@ const Bonjour = props => {
                         </Text>
                     </Div>
                 </Div>
-                <Div h="5vw" w="100vw" d="flex" bg="gray200" align="center" justify="center" p={{y: "1vw"}}>
+                <Div h="5vw" w="100vw" d="flex" bg="darkBg100" align="center" justify="center" p={{y: "1vw"}}>
                 <Button
                 onClick = {(e) => {
                     e.preventDefault();
@@ -55,7 +57,7 @@ const Bonjour = props => {
                     prefix={
                     <Icon name="LongLeft" size="20px" color="white" m={{r: "0.5rem"}}/>
                     }
-                    bg="info600" rounded="circle" p={{r:"1.5rem", l: "1rem"}} shadow="3" hoverShadow="4"
+                    bg="buttonBlue" rounded="circle" p={{r:"1.5rem", l: "1rem"}} shadow="3" hoverShadow="4"
                 >
                     Back
                 </Button>

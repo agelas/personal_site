@@ -12,7 +12,9 @@ const Zoom2 = props => {
 
     const theme = {
         colors: {
-          black900: "1d1d1e"
+          black900: "1d1d1e",
+          darkBg100: "#222222",
+          buttonBlue: "#336699"
         }
     };
 
@@ -20,12 +22,12 @@ const Zoom2 = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                <Div h = "55vw" w = "100vw" d = "flex" bg = "gray500" align = "center" justify = "center" bg = "white" bgImg = {background}>
-                    <Div h = "25vw" w = "80vw" d =  "flex" bg = "white" align = "center" justify = "center" flexDir = "column" >
-                        <Text textSize = "heading" textWeight = "700" p = "1rem">
+                <Div h = "55vw" w = "100vw" d = "flex" align = "center" justify = "center" bg = "darkBg100" bgImg = {background}>
+                    <Div h = "25vw" w = "80vw" d =  "flex" bg = "darkBg100" align = "center" justify = "center" flexDir = "column" >
+                        <Text textSize = "heading" textColor = "gray700" textWeight = "700" p = "1rem">
                             Zoom University Pt 2
                         </Text> 
-                        <Text p = "5rem" overflow = "auto">
+                        <Text p = "5rem" textColor = "gray700" overflow = "auto">
                         If you've read part 1, then you know the general feeling of malaise I have towards online schooling. But it wasn't 
                         all bad. There were some good parts. Primarily, I did appreciate the time I was able to spend with my parents. I 
                         know that college is usually viewed as a time to spread one's wings and chart their own path in the world- independent 
@@ -38,7 +40,7 @@ const Zoom2 = props => {
                         </Text>
                     </Div>
                 </Div>
-                <Div h="5vw" w="100vw" d="flex" bg="gray200" align="center" justify="center" p={{y: "1vw"}}>
+                <Div h="5vw" w="100vw" d="flex" bg="darkBg100" align="center" justify="center" p={{y: "1vw"}}>
                 <Button
                 onClick = {(e) => {
                     e.preventDefault();
@@ -47,7 +49,7 @@ const Zoom2 = props => {
                     prefix={
                     <Icon name="LongLeft" size="20px" color="white" m={{r: "0.5rem"}}/>
                     }
-                    bg="info600" rounded="circle" p={{r:"1.5rem", l: "1rem"}} shadow="3" hoverShadow="4"
+                    bg="buttonBlue" rounded="circle" p={{r:"1.5rem", l: "1rem"}} shadow="3" hoverShadow="4"
                 >
                     Back
                 </Button>

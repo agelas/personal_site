@@ -25,7 +25,8 @@ const Blog = props => {
     const theme = {
         colors: {
           black900: "1d1d1e",
-          darkBg100: "#222222"
+          darkBg100: "#222222",
+          buttonBlue: "#336699"
         }
     };
       
@@ -66,7 +67,7 @@ const Blog = props => {
                                 bg="darkBg100"
                                 pos="static"
                                 top="25%"
-                                textColor="white"
+                                textColor="gray700"
                                 textSize="display1"
                                 textAlign="center"
                                 align="center"
@@ -176,7 +177,7 @@ const Blog = props => {
                             textSize="heading"
                             textDecor="overline"
                             textWeight="500"
-                            textColor="black300"
+                            textColor="gray700"
                         >
                         Food
                         </Text>
@@ -201,7 +202,7 @@ const Blog = props => {
                                 d="flex"
                                 bg="darkBg100"
                                 pos="static"
-                                textColor="white"
+                                textColor="gray700"
                                 textSize="subheader"
                                 textAlign="center"
                                 p="2vw"
@@ -239,7 +240,7 @@ const Blog = props => {
                             textSize="heading"
                             textDecor="overline"
                             textWeight="500"
-                            textColor="black300"
+                            textColor="gray700"
                         >
                         Ramblings
                         </Text>
@@ -255,6 +256,7 @@ const Blog = props => {
                         bg="darkBg100"
                     >
                         {/*It takes like 6 of these to get on the next line btw*/}
+                        <BlogCard title = "Semicolons" date = "3/12/2021" postURL = "/Semicolons"/>
                         <BlogCard title = "Safflower Oil" date = "1/28/2021" postURL = "/Safflower"/>
                         <BlogCard title = "Zoom U Pt 2" date = "12/26/2020" postURL = "/Zoom2"/>
                         <BlogCard title = "Zoom U Pt 1" date = "12/26/2020" postURL = "/Zoom1"/>
@@ -285,7 +287,7 @@ const Blog = props => {
                             m={{r: "0.5rem"}}
                         />
                         }
-                        bg="info600"
+                        bg="buttonBlue"
                         rounded="circle"
                         p={{r:"1.5rem", l: "1rem"}}
                         shadow="3"
