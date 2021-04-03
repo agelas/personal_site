@@ -40,9 +40,8 @@ const Semicolons = props => {
                         in the right place. Nginx was installed correctly. NPM was actually working by some miracle. The react-scripts actually built the project 
                         in the right folder.  My deploy.sh bash script was right. But the website still wasn't deployed. And when I eventually managed to get an actual 
                         system administrator on a zoom call before I ripped my hair out, it took him all of five seconds to figure out what had been eluding me for over 
-                        2 hours. I forgot a semicolon in a .conf file. On the one hand, this is an error I thought I shoudld've stopped making after my first computer 
-                        science class in high school. On the other hand, considering how much I switch between C/C++, python, and Javascript these days, this was 
-                        unsurprising. There's nothing else to really say besides that it be like that sometimes.
+                        2 hours. I forgot a semicolon in a .conf file. This type of thing I thought I should've stopped making after my first computer 
+                        science class in high school. There's nothing else to really say besides that it be like that sometimes.
                         </Text>
                     </Div>
                 </Div>

@@ -251,17 +251,17 @@ const Blog = props => {
                         d="flex"
                         flexDir = "row"
                         p = "1vw"
-                        justify="space-around"
-                        //align="center"
+                        justify="space-evenly"
                         bg="darkBg100"
                     >
                         {/*It takes like 6 of these to get on the next line btw*/}
+                        <BlogCard title = "College Cooking" date = "3/28/2021" postURL = "/CollegeCooking"/> 
                         <BlogCard title = "Semicolons" date = "3/12/2021" postURL = "/Semicolons"/>
                         <BlogCard title = "Safflower Oil" date = "1/28/2021" postURL = "/Safflower"/>
                         <BlogCard title = "Zoom U Pt 2" date = "12/26/2020" postURL = "/Zoom2"/>
                         <BlogCard title = "Zoom U Pt 1" date = "12/26/2020" postURL = "/Zoom1"/>
                         <BlogCard title = "Bonjour" date = "10/18/2020" postURL = "/Bonjour"/> 
-                        <BlogCard title = "Hello World" date = "10/15/2020" postURL = "/hello_world" />                  
+                        <BlogCard title = "Hello World" date = "10/15/2020" postURL = "/hello_world"/>                 
                     </Row>
                 </Div>
             
