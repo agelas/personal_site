@@ -13,6 +13,8 @@ import TemModal from './TemeraireModal'
 import LevModal from './LeviathanModal'
 import BrieDrawer from './BakedBrieSidedrawer'
 import DalgonaDrawer from './DalgonaSidedrawer'
+import BreadedSalmonSide from './BreadedSalmonSide'
+import MisoSalmon from './MisoSalmonSide'
 import BlogCard from './BlogCard'
 
 //For future reference remember that user-defined components like the one's being imported above must be capitalized in JSX
@@ -26,7 +28,9 @@ const Blog = props => {
         colors: {
           black900: "1d1d1e",
           darkBg100: "#222222",
-          buttonBlue: "#336699"
+          buttonBlue: "#336699",
+          salmon: "#FFB4A2",
+          salmon2: "#CB997E"
         }
     };
       
@@ -216,6 +220,8 @@ const Blog = props => {
                              >
                                 <DalgonaDrawer/>
                                 <BrieDrawer/>
+                                <BreadedSalmonSide/>
+                                <MisoSalmon/>
                              </Div>
                         </Col>
                         <Col

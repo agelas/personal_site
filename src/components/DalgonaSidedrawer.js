@@ -1,7 +1,5 @@
 import React from 'react'
 import {Div, Button, SideDrawer, Text} from 'atomize'
-//import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
-//import {Client as Styletron} from 'styletron-engine-atomic';
 
 const DalgonaSizeSidedrawer = ({isOpen, onClose}) => {
     return(

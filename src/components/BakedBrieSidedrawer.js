@@ -1,7 +1,5 @@
 import React from 'react'
 import {Div, Button, SideDrawer, Text} from 'atomize'
-//import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
-//import {Client as Styletron} from 'styletron-engine-atomic';
 
 const BrieSizeSidedrawer = ({isOpen, onClose}) => {
     return(
@@ -11,7 +9,7 @@ const BrieSizeSidedrawer = ({isOpen, onClose}) => {
                 m={{b:"4rem"}}
             >
                 <Text>
-                    Ok I don't know why but baked bries always seem to be the go-to dish college students like me at
+                    Ok I don't know why, but baked bries always seem to be the go-to dish college students like me at
                     Johns Hopkins attempt to make when we have the time to try adulting and/or hosting brunch pre-corona.
                     The reason is probably because these things are easy to make, share, and decorate. Back in Baltimore, we                   
                     would literally buy a brie, cover the top in fig jam and strawberry jam (any fruit jam that's sweet will work),

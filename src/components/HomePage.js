@@ -28,7 +28,9 @@ const HomePage = (props) => {
           purple800: "#553EB5",
           darkBg100: "#222222",
           buttonDark: "#666666",
-          buttonBlue: "#336699"
+          buttonBlue: "#336699",
+          salmon: "#FEC5BB",
+          salmon2: "#FEC89A"
         }
       }; 
     
