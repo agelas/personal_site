@@ -1,6 +1,6 @@
 import React from 'react'
 import {Div, Button, SideDrawer, Text} from 'atomize'
-import MisoSalmon from '../Pictures/MisoSalmon.jpg'
+import MisoSalmon from '../../Pictures/MisoSalmon.jpg'
 
 const MisoSalmonSideDrawer = ({isOpen, onClose}) => {
     return(

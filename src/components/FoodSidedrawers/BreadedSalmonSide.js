@@ -1,6 +1,6 @@
 import React from 'react'
 import {Div, Button, SideDrawer, Text} from 'atomize'
-import BreadedSalmon from '../Pictures/BreadedSalmon.jpg'
+import BreadedSalmon from '../../Pictures/BreadedSalmon.jpg'
 
 const BreadedSalmonSideDrawer = ({isOpen, onClose}) => {
     return(

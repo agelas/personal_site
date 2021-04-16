@@ -11,10 +11,11 @@ import REModal from './REModal'
 import MLPPModal from './MLPPModal'
 import TemModal from './TemeraireModal'
 import LevModal from './LeviathanModal'
-import BrieDrawer from './BakedBrieSidedrawer'
-import DalgonaDrawer from './DalgonaSidedrawer'
-import BreadedSalmonSide from './BreadedSalmonSide'
-import MisoSalmon from './MisoSalmonSide'
+import BrieDrawer from './FoodSidedrawers/BakedBrieSidedrawer'
+import DalgonaDrawer from './FoodSidedrawers/DalgonaSidedrawer'
+import BreadedSalmonSide from './FoodSidedrawers/BreadedSalmonSide'
+import MisoSalmon from './FoodSidedrawers/MisoSalmonSide'
+import CrustiniSide from './FoodSidedrawers/CrustiniSide.js'
 import BlogCard from './BlogCard'
 
 //For future reference remember that user-defined components like the one's being imported above must be capitalized in JSX
@@ -30,7 +31,8 @@ const Blog = props => {
           darkBg100: "#222222",
           buttonBlue: "#336699",
           salmon: "#FFB4A2",
-          salmon2: "#CB997E"
+          salmon2: "#CB997E",
+          bready: '#BC6C25'
         }
     };
       
@@ -222,6 +224,7 @@ const Blog = props => {
                                 <BrieDrawer/>
                                 <BreadedSalmonSide/>
                                 <MisoSalmon/>
+                                <CrustiniSide/>
                              </Div>
                         </Col>
                         <Col
