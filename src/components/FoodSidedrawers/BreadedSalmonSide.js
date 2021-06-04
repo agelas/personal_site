@@ -12,7 +12,7 @@ const BreadedSalmonSideDrawer = ({isOpen, onClose}) => {
             >
                 <Text>
                     Long story short, when I got to Baltimore and the beginning of my junior year's Spring
-                    semester, I found a bunch of salmon (I'm talking several pounds here" in the freezer in addition to a roommate who didn't know how
+                    semester, I found a bunch of salmon (I'm talking several pounds here) in the freezer in addition to a roommate who didn't know how
                     to cook salmon. Fortunately I sort of do. The following is based off watching my mother doing 
                     something similar back home, and works for two fillets. 
                     <br />
