@@ -15,7 +15,7 @@ import BrieDrawer from './FoodSidedrawers/BakedBrieSidedrawer'
 import DalgonaDrawer from './FoodSidedrawers/DalgonaSidedrawer'
 import BreadedSalmonSide from './FoodSidedrawers/BreadedSalmonSide'
 import MisoSalmon from './FoodSidedrawers/MisoSalmonSide'
-import CrustiniSide from './FoodSidedrawers/CrustiniSide.js'
+import CrustiniSide from './FoodSidedrawers/CrustiniSide'
 import BlogCard from './BlogCard'
 
 //For future reference remember that user-defined components like the one's being imported above must be capitalized in JSX
