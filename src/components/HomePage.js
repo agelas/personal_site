@@ -43,7 +43,7 @@ const HomePage = (props) => {
                     <Route exact path = "/">
                         <Div
                         textColor = "success100"
-                        minH="35vh"
+                        minH="50vh"
                         w="100vw"
                         d="flex"
                         flexDir="column"
@@ -67,13 +67,15 @@ const HomePage = (props) => {
                         and Computer Science.
                         </Text>
                         </Div>
+                        {/*Ok so this is the nonsense causing all the spacing problems on the landing page lol. 
+                        Why on earth did I do it this way.*/}
                         <Div
                         w="100vw"
                         d="flex"
                         flexDir="column"
                         align="center"
                         bg = "darkBg100" 
-                        minH = "10rem"
+                        minH = "25vw"
                         >
                         
                         {/*The row is where the four panels with the links are being held. The row has
