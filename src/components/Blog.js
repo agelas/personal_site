@@ -270,7 +270,8 @@ const Blog = props => {
                         <BlogCard title = "Zoom U Pt 2" date = "12/26/2020" postURL = "/Zoom2"/>
                         <BlogCard title = "Zoom U Pt 1" date = "12/26/2020" postURL = "/Zoom1"/>
                         <BlogCard title = "Bonjour" date = "10/18/2020" postURL = "/Bonjour"/> 
-                        <BlogCard title = "Hello World" date = "10/15/2020" postURL = "/hello_world"/>                 
+                        <BlogCard title = "Hello World" date = "10/15/2020" postURL = "/hello_world"/> 
+                        <BlogCard title = "Test" date = "6/19/2021" postURL = "/TestBlog"/>                
                     </Row>
                 </Div>
             
