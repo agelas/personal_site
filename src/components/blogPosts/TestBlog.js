@@ -3,6 +3,7 @@ import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
+import BlogNavBar from './BlogNavBar'
 
 const TestBlog = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -24,6 +25,7 @@ const TestBlog = props => {
                 <StyleReset/>
                     <Div h = "100vw" bg = "blogBG">
                         <BlogHeader title="What the fuckening"/>
+                        <BlogNavBar/>
                     </Div>
             </ThemeProvider>
         </StyletronProvider>

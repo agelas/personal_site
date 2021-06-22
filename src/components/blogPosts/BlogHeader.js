@@ -1,5 +1,6 @@
-import React from "react"
+import React from "react";
 import {Row, Col, Text} from 'atomize';
+// import StripeCorner from '../../Pictures/BlogStripeCorner.png'
 
 function BlogHeader(props) {
     return(
@@ -11,12 +12,12 @@ function BlogHeader(props) {
                     textWeight = "300"
                     fontFamily = "secondary"
                     textSize = "display2"
-                    p = {{t:"3vw", l:"10vw"}}
+                    p = {{t:"4vw", l:"10vw"}}
                 >
-                    Hi {props.title}
+                    {props.title}
                 </Text>
             </Col>
-            <Col size = "2" bg = "white">
+            <Col size = "2" bg = "headerBG">
             
             </Col>
         </Row>
