@@ -14,6 +14,7 @@ import Zoom2 from './blogPosts/Zoom2'
 import Safflower from './blogPosts/Safflower'
 import Semicolons from './blogPosts/Semicolons'
 import CollegeCooking from './blogPosts/CollegeCooking'
+import ExperienceJS from './blogPosts/ExperienceJS'
 import TestBlog from './blogPosts/TestBlog'
 
 const HomePage = (props) => {
@@ -228,6 +229,7 @@ const HomePage = (props) => {
                         <Route path="/Semicolons" exact component={Semicolons}/>
                         <Route path="/CollegeCooking" exact component={CollegeCooking}/>
                         <Route path="/TestBlog" exact component={TestBlog}/>
+                        <Route path="/ExperienceJS" exact component={ExperienceJS}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </Router>

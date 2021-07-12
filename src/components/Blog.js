@@ -264,6 +264,7 @@ const Blog = props => {
                         bg="darkBg100"
                     >
                         {/*It takes like 6 of these to get on the next line btw*/}
+                        <BlogCard title = "ExperienceJS" date = "5/14/2021" postURL = "/ExperienceJS"/>
                         <BlogCard title = "College Cooking" date = "3/28/2021" postURL = "/CollegeCooking"/> 
                         <BlogCard title = "Semicolons" date = "3/12/2021" postURL = "/Semicolons"/>
                         <BlogCard title = "Safflower Oil" date = "1/28/2021" postURL = "/Safflower"/>
