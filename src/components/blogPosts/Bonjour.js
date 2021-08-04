@@ -4,6 +4,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Text, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
 import BlogNavBar from './BlogNavBar'
+import BlogFooter from "./BlogFooter"
 
 const Bonjour = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +24,7 @@ const Bonjour = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                    <Div h = "100vw" bg = "blogBG">
+                    <Div h = "100vh" bg = "blogBG">
                         <BlogHeader title = "Bonjour"/>
                         <BlogNavBar/>
                         <Text p = "5rem" overflow = "auto" textColor = "gray700" textSize = "subheader" fontFamily = "secondary">
@@ -47,6 +48,9 @@ const Bonjour = props => {
                             where both the exceptions and rules are subject to change based on what is in vogue.
                             I have two semester of this. At the very least French sounds nice when you get the pronounciation right.  
                         </Text>
+                        <Div pos = "absolute" bottom = "0">
+                            <BlogFooter/>
+                        </Div>
                     </Div>
             </ThemeProvider>
         </StyletronProvider>

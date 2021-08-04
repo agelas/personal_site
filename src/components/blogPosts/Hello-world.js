@@ -4,6 +4,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Text, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
 import BlogNavBar from './BlogNavBar'
+import BlogFooter from './BlogFooter'
 
 const Hello_world = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +24,7 @@ const Hello_world = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                    <Div h = "100vw" bg = "blogBG">
+                    <Div h = "100vh" bg = "blogBG">
                     <BlogHeader title = "Hello World"/>
                     <BlogNavBar/>
                         <Text p = "5rem" textColor = "gray700" textSize = "subheader" fontFamily = "secondary">
@@ -31,6 +32,9 @@ const Hello_world = props => {
                             about my life with everyone. But I've been told this exercise in sharing snippets of my life can be somewhat therapeutic,
                             so I'll give it a shot.
                         </Text>
+                        <Div pos = "absolute" bottom = "0">
+                            <BlogFooter/>
+                        </Div>
                     </Div>
             </ThemeProvider>
         </StyletronProvider>

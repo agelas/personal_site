@@ -4,6 +4,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Text, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
 import BlogNavBar from './BlogNavBar'
+import BlogFooter from './BlogFooter'
 
 const CollegeCooking = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +24,7 @@ const CollegeCooking = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                    <Div h = "100vw" bg = "blogBG">
+                    <Div h = "100vh" bg = "blogBG">
                     <BlogHeader title = "College Cooking"/>
                     <BlogNavBar/>
                         <Text p = "5rem" textColor = "gray700" overflow = "auto" textSize = "subheader" fontFamily = "secondary">
@@ -43,6 +44,9 @@ const CollegeCooking = props => {
                         whatever in various marinades on the weekend and shove it in the freezer, you'll thank yourself come Wednesday 
                         night and you're three problem sets behind with a midterm tomorrow, because at the very least dinner won't be bland. 
                         </Text>
+                        <Div pos = "absolute" bottom = "0">
+                            <BlogFooter/>
+                        </Div>
                 </Div>
             </ThemeProvider>
         </StyletronProvider>

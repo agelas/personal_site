@@ -4,6 +4,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Text, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
 import BlogNavBar from './BlogNavBar'
+import BlogFooter from './BlogFooter'
 
 const Safflower = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +24,7 @@ const Safflower = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                    <Div h = "100vw" bg = "blogBG">
+                    <Div h = "100vh" bg = "blogBG">
                     <BlogHeader title = "Safflower Oil"/>
                     <BlogNavBar/>
                         <Text p = "5rem" textColor = "gray700" overflow = "auto" textSize = "subheader" fontFamily = "secondary">
@@ -38,6 +39,9 @@ const Safflower = props => {
                         and hence it is unrivaled in its ability to prevent your kitchen from smelling like a greasy dumpster fire. I can confidently say I owe so much 
                         to the beautiful human that decided to turn safflower seeds into oil. 
                         </Text>
+                            <Div pos = "absolute" bottom = "0">
+                        <BlogFooter/>
+                    </Div>
                     </Div>
             </ThemeProvider>
         </StyletronProvider>

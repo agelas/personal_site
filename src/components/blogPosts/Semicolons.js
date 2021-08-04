@@ -4,6 +4,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Text, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
 import BlogNavBar from './BlogNavBar'
+import BlogFooter from './BlogFooter'
 
 const Semicolons = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +24,7 @@ const Semicolons = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                    <Div h = "100vw" bg = "blogBG">
+                    <Div h = "100vh" bg = "blogBG">
                     <BlogHeader title = "Semicolons"/>
                     <BlogNavBar/>
                         <Text p = "5rem" textColor = "gray700" overflow = "auto" textSize = "subheader" fontFamily = "secondary">
@@ -41,6 +42,9 @@ const Semicolons = props => {
                         system administrator on a zoom call before I ripped my hair out, it took him all of five seconds to figure out what had been eluding me for over 
                         2 hours. I forgot a semicolon in a .conf file. It be like that sometimes.
                         </Text>
+                        <Div pos = "absolute" bottom = "0">
+                            <BlogFooter/>
+                        </Div>
                 </Div>
             </ThemeProvider>
         </StyletronProvider>

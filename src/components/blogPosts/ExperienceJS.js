@@ -4,6 +4,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Text, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
 import BlogNavBar from './BlogNavBar'
+import BlogFooter from './BlogFooter'
 
 const ExperienceJS = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,9 +24,10 @@ const ExperienceJS = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                <Div h = "100vw" bg = "blogBG">
+                <Div h = "100vh" bg = "blogBG">
                     <BlogHeader title = "ExperienceJS"/>
                     <BlogNavBar/>
+                        <Div h = "70vh" overflow = "auto" bg = "blogBG">
                         <Text p = "5rem" textColor = "gray700" overflow = "auto" textSize = "subheader" fontFamily = "secondary">
                         &emsp; I've heard experience defined as the thing you get right after you need it. I don't know who came up with that aphorism, or 
                         frankly if that even counts as an aphorism, but the truth expressed in that statement always decides to manifests itself in 
@@ -61,6 +63,10 @@ const ExperienceJS = props => {
                         how to pick correctly takes experience. Unfortunately that experience comes at the price of the self-commiserating misery 
                         brought on by trying to figure out what 'best practice' actually means in React. Such is life I suppose.
                         </Text>
+                        </Div>
+                        <Div pos = "flexible" bottom = "0">
+                            <BlogFooter/>
+                        </Div>
                 </Div>
             </ThemeProvider>
         </StyletronProvider>

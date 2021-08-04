@@ -4,7 +4,7 @@ import {Row, Col, Button, Icon} from 'atomize';
 function BlogNavBar() {
     return(
        
-        <Row>
+        <Row w = "100vw">
             <Col size = "2" d = "flex" h = "4vw" bg = "headerBG">
             {/*This col is literally just a spacer*/}
             </Col>

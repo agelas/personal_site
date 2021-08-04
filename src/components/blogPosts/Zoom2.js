@@ -4,6 +4,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Div, Text, StyleReset, ThemeProvider} from 'atomize';
 import BlogHeader from './BlogHeader'
 import BlogNavBar from './BlogNavBar'
+import BlogFooter from "./BlogFooter"
 
 const Zoom2 = props => {
     const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -23,7 +24,7 @@ const Zoom2 = props => {
         <StyletronProvider value = {engine} debug = {debug} debugAfterHydration>
             <ThemeProvider theme = {theme}>
                 <StyleReset/>
-                <Div h = "100vw" bg = "blogBG">
+                <Div h = "100vh" bg = "blogBG">
                     <BlogHeader title = "Zoom University Part 2"/>
                     <BlogNavBar/>
                         <Text p = "5rem" textColor = "gray700" overflow = "auto" textSize = "subheader" fontFamily = "secondary">
@@ -37,6 +38,9 @@ const Zoom2 = props => {
                         interesting how I felt like a freshman all over again, despite being halfway through my junior year already. I guess the 
                         comforts of home quickly become difficult to give up. 
                         </Text>
+                        <Div pos = "absolute" bottom = "0">
+                            <BlogFooter/>
+                        </Div>
                 </Div>
             </ThemeProvider>
         </StyletronProvider>

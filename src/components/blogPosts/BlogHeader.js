@@ -5,7 +5,7 @@ import {Row, Col, Text} from 'atomize';
 function BlogHeader(props) {
     return(
        
-        <Row>
+        <Row w = "100vw">
             <Col size = "10" d = "flex" h = "8vw" bg = "headerBG">
                 <Text
                     textColor = "gray700"
