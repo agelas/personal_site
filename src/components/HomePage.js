@@ -44,23 +44,30 @@ const HomePage = (props) => {
                 <Switch>
                     <Route exact path = "/">
                         <Div
-                        textColor = "success100"
                         minH="50vh"
                         w="100vw"
                         d="flex"
-                        flexDir="column"
+                        flexDir= {{xs: "row", lg: "column"}}
                         align="center"
-                        textSize="display3"
+                        justify = "center"
                         p={{x:"1rem", y: "10rem"}}
                         bgImg = {bubbleground}
                         bgSize = "contain"
                         >
-                        Hi, my name's Mathias 
                         <Text
                             d = "flex"
-                            textSize = "heading"
+                            p = {{l: {xs: "1rem"}}}
+                            textAlign = "center"
+                            textColor = "success100"
+                            textSize= {{xs: "heading", lg: "display3"}}
+                        >
+                        Hi, my name's Mathias
+                        </Text> 
+                        <Text
+                            d = "flex"
+                            textSize = {{xs: "subheader", lg: "heading"}}
                             m = "3rem"
-                            w = "70rem"
+                            w = {{lg: "70rem"}}
                             textAlign = "center"
                             textColor = "success100"
                             hoverTextColor="info700"
@@ -82,8 +89,8 @@ const HomePage = (props) => {
                         
                         {/*The row is where the four panels with the links are being held. The row has
                         three columns, each column holds a div, and embedded in the div is the button*/}
-                        <Row d = "flex" flexDir = "row" justify = "space-between">
-                            <Col d = "flex" size="3" bg = "darkBg100" p="4rem" align = "center">
+                        <Row d = "flex" flexDir = {{ xs: 'column', lg: 'row' }} justify = "flex-end" align = "space-around">
+                            <Col d = "flex" size= {{xs: "12", lg:"3"}} bg = "sucess100" flexDir = {{ xs: 'column', lg: 'row' }} p= {{xs: "1rem", lg: "4rem"}} align = "center" justify = "center">
                                 <Div 
                                 d="flex"
                                 p="1rem" 
@@ -101,7 +108,7 @@ const HomePage = (props) => {
                                 <AboutModal/>
                                 </Div>
                             </Col>
-                            <Col d = "flex" size="3" bg = "sucess100" p="4rem" align = "center">
+                            <Col d = "flex" size= {{xs: "12", lg:"3"}} bg = "sucess100" flexDir = {{ xs: 'column', lg: 'row' }} p= {{xs: "1rem", lg: "4rem"}} align = "center" justify = "center">
                                 <Div 
                                 d = "flex"
                                 p="1rem" 
@@ -139,7 +146,7 @@ const HomePage = (props) => {
                                 </Button> 
                                 </Div>
                             </Col>
-                            <Col d = "flex" size="3" bg = "sucess100" p="4rem" align = "center">
+                            <Col d = "flex" size= {{xs: "12", lg:"3"}} bg = "sucess100" flexDir = {{ xs: 'column', lg: 'row' }} p= {{xs: "1rem", lg: "4rem"}} align = "center" justify = "center">
                                 <Div 
                                 d = "flex"
                                 p="1rem"
@@ -179,14 +186,14 @@ const HomePage = (props) => {
                                 </Button>
                                 </Div>
                             </Col>
-                            <Col d = "flex" size="3" bg = "sucess100" p="4rem" align = "center">
+                            <Col d = "flex" size= {{xs: "12", lg:"3"}} bg = "sucess100" flexDir = {{ xs: 'column', lg: 'row' }} p= {{xs: "1rem", lg: "4rem"}} align = "center" justify = "center">
                                 <Div 
                                 d="flex"
                                 p="1rem" 
                                 bg = "buttonDark" 
                                 hoverBg = "gray500"
                                 rounded = "md" 
-                                minW = "9.5rem" 
+                                minW = "8rem" 
                                 minH = "10rem"
                                 align = "center"
                                 justify = "center"
