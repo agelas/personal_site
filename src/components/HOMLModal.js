@@ -1,20 +1,9 @@
 import React, {Component} from 'react'
 import {Div, Button, Modal, Text} from 'atomize'
-//import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
-//import {Client as Styletron} from 'styletron-engine-atomic';
 
 
 const ModalSize = ({ isOpen, onClose }) => {
 
-    //const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
-    //Create a client engine instance
-    //const engine = new Styletron();
-    /*
-    const theme = {
-        colors: {
-            black900: "1d1d1e"
-        }
-    }; */
 
     return (
         
@@ -25,19 +14,18 @@ const ModalSize = ({ isOpen, onClose }) => {
         maxW="48rem"
         >
             <Div
-                minH="auto" 
+                minH= {{lg: "auto"}}
+                h= {{xs: "40rem"}} 
                 d="flex"
                 flexDir="column"
                 align="flex-start"
-                textSize="display2"
-                p={{x:"1rem", y: "5rem"}}
-                bgSize = "contain"
+                overflow="scroll"
             >
                 <Text
                     textColor = "black600"
-                    textSize = "paragraph"
+                    textSize = {{xs: "caption", lg: "paragraph"}}
                     textAlign = "center"
-                    p={{l:"3rem", r:"3rem", y:"2rem"}}
+                    p={{lg: {l:"3rem", r:"3rem", y:"2rem"}}}
                 >
                     I picked up this book in early 2020 because I wanted to get more familiar with common Python machine learning
                     libraries. Previously, I had taken Andrew Ng's Machine Learning class on Coursera and had also self-studied a
@@ -62,11 +50,6 @@ const ModalSize = ({ isOpen, onClose }) => {
                 >
                 Close
                 </Button>
-                <Button onClick={onClose} bg="info700">
-                    OK
-                </Button>
-                
-            
             </Div>
         </Modal>
         
@@ -85,7 +68,7 @@ class HOMLModal extends Component {
         const {showModal} = this.state;
 
         return(
-            <Div d="flex" align="flex-start">
+            <Div d="flex" align="flex-start" justify={{xs: "center"}}>
                 <Button
                     bg="brand600"
                     hoverBg="brand700"
@@ -93,6 +76,8 @@ class HOMLModal extends Component {
                     m={{b: "1rem"}}
                     shadow="3"
                     hoverShadow="4"
+                    textSize={{xs:"caption", md: "body"}}
+                    textWeight={{ xs: '400', md: '500' }}
                     onClick={() => this.setState({showModal: true})}
                 >
                     HOML with Scikit-Learn, Keras, and Tensorflow

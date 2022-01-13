@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 import {Div, Button, Modal, Text, ThemeProvider} from 'atomize'
-//import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
-//import {Client as Styletron} from 'styletron-engine-atomic';
 
 
 const ModalSize = ({ isOpen, onClose }) => {
@@ -14,19 +12,18 @@ const ModalSize = ({ isOpen, onClose }) => {
         maxW="48rem"
         >
             <Div
-                minH="auto" 
+                minH= {{lg: "auto"}}
+                h= {{xs: "40rem"}} 
                 d="flex"
                 flexDir="column"
                 align="flex-start"
-                textSize="display2"
-                p={{x:"1rem", y: "5rem"}}
-                bgSize = "contain"
+                overflow="scroll"
             >
                 <Text
                     textColor = "black600"
-                    textSize = "paragraph"
+                    textSize = {{xs: "caption", lg: "paragraph"}}
                     textAlign = "center"
-                    p={{l:"3rem", r:"3rem", y:"2rem"}}
+                    p={{lg: {l:"3rem", r:"3rem", y:"2rem"}}}
                 >
                     [Spoilers-ish] So this is actually a fictional series by Naomi Novik that I got back into recently over my Summer because I could occasionally
                     squeeze in an hour or so of leisure reading believe it or not. When it comes to fiction, I'm a big fan of
@@ -54,11 +51,6 @@ const ModalSize = ({ isOpen, onClose }) => {
                 >
                 Close
                 </Button>
-                <Button onClick={onClose} bg="info700">
-                    OK
-                </Button>
-                
-            
             </Div>
         </Modal>
     );
@@ -85,7 +77,7 @@ class TemModal extends Component {
 
         return(
             <ThemeProvider theme={theme}>
-            <Div d="flex" align="flex-start">
+            <Div d="flex" align="flex-start" justify={{xs: "center"}}>
                 <Button
                     bg="purple600"
                     hoverBg="purple700"
@@ -93,6 +85,8 @@ class TemModal extends Component {
                     m={{b: "1rem"}}
                     shadow="3"
                     hoverShadow="4"
+                    textSize={{xs:"caption", md: "body"}}
+                    textWeight={{ xs: '400', md: '500' }}
                     onClick={() => this.setState({showModal: true})}
                 >
                     Temeraire 

@@ -6,7 +6,7 @@ import {Div, Button, Icon, Text, Row, Col, StyleReset, ThemeProvider} from 'atom
 import bubbleground from '../double-bubble-outline/dark-honeycomb.png'
 import AboutModal from './AboutModal';
 import NotFound from './NotFound'
-import Blog from './Blog'
+import Blog from './BlogTest'
 import Hello_world from './blogPosts/Hello-world'
 import Bonjour from './blogPosts/Bonjour'
 import Zoom1 from './blogPosts/Zoom1'

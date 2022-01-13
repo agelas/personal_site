@@ -19,19 +19,18 @@ const ModalSize = ({ isOpen, onClose }) => {
         maxW="48rem"
         >
             <Div
-                minH="auto" 
+                minH= {{lg: "auto"}} 
+                h= {{xs: "40rem"}}
                 d="flex"
                 flexDir="column"
                 align="flex-start"
-                textSize="display2"
-                p={{x:"1rem", y: "5rem"}}
-                bgSize = "contain"
+                overflow="scroll"
             >
                 <Text
                     textColor = "black600"
-                    textSize = "paragraph"
+                    textSize = {{xs: "caption", lg: "paragraph"}}
                     textAlign = "center"
-                    p={{l:"3rem", r:"3rem", y:"2rem"}}
+                    p={{lg: {l:"3rem", r:"3rem", y:"2rem"}}}
                 >
                     I managed to get a copy of the 2012 edition of this book a while back when I first started getting interested 
                     in taking a deeper dive into the mathematical side of machine learning, especially in how AI relates to probability
@@ -59,11 +58,6 @@ const ModalSize = ({ isOpen, onClose }) => {
                 >
                 Close
                 </Button>
-                <Button onClick={onClose} bg="info700">
-                    OK
-                </Button>
-                
-            
             </Div>
         </Modal>
         
@@ -82,7 +76,7 @@ class MLPPModal extends Component {
         const {showModal} = this.state;
 
         return(
-            <Div d="flex" align="flex-start">
+            <Div d="flex" align="flex-start" justify={{xs: "center"}}>
                 <Button
                     bg="danger600"
                     hoverBg="danger700"
@@ -90,6 +84,8 @@ class MLPPModal extends Component {
                     m={{b: "1rem"}}
                     shadow="3"
                     hoverShadow="4"
+                    textSize={{xs:"caption", md: "body"}}
+                    textWeight={{ xs: '400', md: '500' }}
                     onClick={() => this.setState({showModal: true})}
                 >
                     Machine Learning: A Probabilistic Perspective 

@@ -45,18 +45,21 @@ const Blog = props => {
                     h="200vw" //This controls the height of the whole page basically
                     w="100vw"
                     d="flex"
-                    flexDir="column"
+                    flexDir={{xs: "row", lg: "column"}}
                     align="center"
+                    justify = "center"
                     p={{x:"1rem", y: "5rem"}} //The y padding shifts row grid item down
                     bgImg = {bubbleground}
                     bgSize = "auto" //This made it seem to work a lot better
                     bgRepeat = "repeat"
                     >
                     <Row
-                        h="50vw" //This will control vertically the start of your ramblings
+                        h="auto" //This will control vertically the start of your ramblings
                         w="70vw"
                         d="flex"
                         bg="white"
+                        flexDir= {{xs: "column", lg: "row"}}
+                        align = {{xs: "center"}}
                     >
                         <Col
                             h="50vw"
@@ -67,14 +70,11 @@ const Blog = props => {
                             align="center"
                         >
                             <Text
-                                h="30vw"
-                                w="20vw"
                                 d="flex"
                                 bg="darkBg100"
                                 pos="static"
-                                top="25%"
                                 textColor="gray700"
-                                textSize="display1"
+                                textSize={{xs: "paragraph", lg: "display1"}}
                                 textAlign="center"
                                 align="center"
                                 justify="center"
@@ -88,7 +88,7 @@ const Blog = props => {
                             h="50vw"
                             w="15vw"
                             bgImg={devance}
-                            bgSize="cover"
+                            bgSize={{xs: "contain", lg: "cover"}}
                         >
                         </Col>
                     </Row>
@@ -122,7 +122,7 @@ const Blog = props => {
                             h="50vw"
                             w="15vw"
                             bgImg={antibes}
-                            bgSize="cover"
+                            bgSize = {{xs: "contain", lg: "cover"}}
                         >
                             
                         </Col>
@@ -142,7 +142,7 @@ const Blog = props => {
                                 bg="darkBg100"
                                 pos="static"
                                 textColor="gray700"
-                                textSize="subheader"
+                                textSize={{xs: "paragraph", lg: "subheader"}}
                                 textAlign="center"
                                 p="2vw"
                             >
@@ -231,7 +231,7 @@ const Blog = props => {
                             h="50vw"
                             w="15vw"
                             bgImg={frenchCoffee}
-                            bgSize="cover"
+                            bgSize = {{xs: "contain", lg: "cover"}}
                         >
                         
                         </Col>

@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 import {Div, Button, Modal, Text, ThemeProvider} from 'atomize'
-//import {Provider as StyletronProvider, DebugEngine} from 'styletron-react';
-//import {Client as Styletron} from 'styletron-engine-atomic';
 
 
 const ModalSize = ({ isOpen, onClose }) => {
@@ -14,19 +12,18 @@ const ModalSize = ({ isOpen, onClose }) => {
         maxW="48rem"
         >
             <Div
-                minH="auto" 
+                minH= {{lg: "auto"}}
+                h= {{xs: "40rem"}} 
                 d="flex"
                 flexDir="column"
                 align="flex-start"
-                textSize="display2"
-                p={{x:"1rem", y: "5rem"}}
-                bgSize = "contain"
+                overflow="scroll"
             >
                 <Text
                     textColor = "black600"
-                    textSize = "paragraph"
+                    textSize = {{xs: "caption", lg: "paragraph"}}
                     textAlign = "center"
-                    p={{l:"3rem", r:"3rem", y:"2rem"}}
+                    p={{lg: {l:"3rem", r:"3rem", y:"2rem"}}}
                 >
                     [Spoilers-ish] Imagine a world where any ethical considerations regarding the testing/genetic manipulation of
                     animals just went out the window. So people created very bizarre and very deadly creatures for war. We'll call
@@ -48,11 +45,7 @@ const ModalSize = ({ isOpen, onClose }) => {
                 >
                 Close
                 </Button>
-                <Button onClick={onClose} bg="info700">
-                    OK
-                </Button>
-                
-            
+        
             </Div>
         </Modal>
     );
@@ -79,7 +72,7 @@ class LevModal extends Component {
 
         return(
             <ThemeProvider theme={theme}>
-            <Div d="flex" align="flex-start">
+            <Div d="flex" align="flex-start" justify={{xs: "center"}}>
                 <Button
                     bg="lightGreen600"
                     hoverBg="lightGreen700"
@@ -87,6 +80,8 @@ class LevModal extends Component {
                     m={{b: "1rem"}}
                     shadow="3"
                     hoverShadow="4"
+                    textSize={{xs:"caption", md: "body"}}
+                    textWeight={{ xs: '400', md: '500' }}
                     onClick={() => this.setState({showModal: true})}
                 >
                     Leviathan Trilogy 
