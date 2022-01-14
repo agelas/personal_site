@@ -274,6 +274,50 @@ const BlogTest = props => {
                     <Row
                         h="auto"
                         w="70vw"
+                        p="1rem"
+                        d="flex"
+                    >
+                        <Div
+                        h="10vw"
+                        w="70vw"
+                        d="flex"
+                        bg="sucess100"
+                        align="center"
+                        justify="center"
+                        >
+                            <Text
+                                textSize= {{cs: "subheader", lg: "heading"}}
+                                textDecor="overline"
+                                textWeight="500"
+                                textColor="gray700"
+                            >
+                            Ramblings
+                            </Text>
+                        </Div>
+                    </Row>
+                    <Row
+                        h={{lg: "20vw"}} //This will control vertically the start of your ramblings
+                        w="70vw"
+                        d="flex"
+                        flexDir = {{xs: "column", lg: "row"}}
+                        p = "1vw"
+                        justify="space-evenly"
+                        align="center"
+                        bg="darkBg100"
+                    >
+                        {/*It takes like 6 of these to get on the next line btw*/}
+                        <BlogCard title = "ExperienceJS" date = "5/14/2021" postURL = "/ExperienceJS"/>
+                        <BlogCard title = "College Cooking" date = "3/28/2021" postURL = "/CollegeCooking"/> 
+                        <BlogCard title = "Semicolons" date = "3/12/2021" postURL = "/Semicolons"/>
+                        <BlogCard title = "Safflower Oil" date = "1/28/2021" postURL = "/Safflower"/>
+                        <BlogCard title = "Zoom U Pt 2" date = "12/26/2020" postURL = "/Zoom2"/>
+                        <BlogCard title = "Zoom U Pt 1" date = "12/26/2020" postURL = "/Zoom1"/>
+                        <BlogCard title = "Bonjour" date = "10/18/2020" postURL = "/Bonjour"/> 
+                        <BlogCard title = "Hello World" date = "10/15/2020" postURL = "/hello_world"/>                 
+                    </Row>
+                    <Row
+                        h="auto"
+                        w="70vw"
                         p="1vw"
                         d="flex"
                         bg="darkBg100"

@@ -30,15 +30,16 @@ class BlogCard extends Component {
             <Div 
                 d="flex"
                 bg = "gray400"
-                w = "12vw"
-                h = "5vw"
+                w = {{xs: "40vw", lg:"12vw"}}
+                h = {{xs: "20vw", lg: "5vw"}}
+                align={{xs:"center"}}
                 flexDir = "row"
                 border = "3px solid"
                 borderColor = "gray600"
                 rounded = "sm"    
             >
                 <Div
-                    d = "flex"
+                    d = {{xs:"none", lg:"flex"}}
                     bg = "gray400"
                     w = "3vw"
                     h = "3.5vw"
@@ -55,23 +56,24 @@ class BlogCard extends Component {
                 <Div
                     d = "flex"
                     bg = "gray400"
-                    w = "9vw"
-                    h = "4.5vw"
+                    w = {{xs: "40vw", lg: "9vw"}}
+                    h = {{xs: "10vw", lg: "4.5vw"}}
                     flexDir = "column"
-                    align = "flex-end"
+                    align = {{xs: "center", lg: "flex-end"}}
                     justify = "center"
                 >
                     <Button
-                        h = "3vw"
-                        w = "8vw"
+                        w = {{xs: "35vw", lg: "9vw"}}
+                        h = {{xs: "15vw", lg: "4.5vw"}}
                         d = "flex"
-                        p = "0.1rem"
+                        p = {{lg: "0.1rem"}}
                         bg = "gray400"
                         textColor = "gray800"
-                        textSize = "customSize"
+                        textSize = {{xs: "caption", lg: "customSize"}}
                         fontFamily = "code"
-                        textWeight = "600"
+                        textWeight = {{xs: "400", lg: "600"}}
                         textAlign = "center"
+                        justify="center"
                         onClick = {(e) => {
                             e.preventDefault();
                             render();
@@ -83,7 +85,7 @@ class BlogCard extends Component {
                     <Div
                         h = "1.5vw"
                         w = "8vw"
-                        d = "flex"
+                        d = {{xs: "none", lg: "flex"}}
                         bg = "gray400"
                         justify = "flex-end"
                         p = "0.2rem"
