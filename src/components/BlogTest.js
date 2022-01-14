@@ -188,6 +188,92 @@ const BlogTest = props => {
                     <Row
                         h="auto"
                         w="70vw"
+                        p="1rem"
+                        d="flex"
+                        
+                    >
+                        <Div
+                        h="10vw"
+                        w="70vw"
+                        d="flex"
+                        bg="sucess100"
+                        align="center"
+                        justify="center"
+                        >
+                            <Text
+                                textSize= {{cs: "subheader", lg: "heading"}}
+                                textDecor="overline"
+                                textWeight="500"
+                                textColor="gray700"
+                            >
+                            Food
+                            </Text>
+                        </Div>
+                    
+                    </Row>
+                    <Row
+                        h="auto"
+                        w="70vw"
+                        d="flex"
+                        bg="white"
+                    >
+                        <Col
+                            h="auto"
+                            w="15vw"
+                            d="flex"
+                            bg="darkBg100"
+                            justify= {{xs:"center", lg: "top"}} //idk why but this seems to affect vertical positioning 
+                            align="center" //and this horizontal positioning
+                            flexDir="column"
+                        >
+                            <Div
+                                h="auto"
+                                w={{xs: "70vw", lg: "30vw"}}
+                                d="flex"
+                                bg="darkBg100"
+                                textAlign="center"
+                                p={{lg: "2vw"}}
+                            >
+                                <Text
+                                    //d="flex"
+                                    bg="darkBg100"
+                                    textColor="gray700"
+                                    textSize={{xs: "caption", lg: "subheader"}}
+                                    textAlign= {{lg: "center"}}
+                                    align="center"
+                                    justify="center"
+                                >
+                                By no means am I a chef, but I'd like to think that I can hold my own in a kitchen if the need arises.
+                                </Text>
+                            </Div>
+                            
+                            <Div
+                                h="auto"
+                                w={{xs: "70vw", lg: "30vw"}}
+                                bg="sucess100"
+                                align = {{xs:"center"}}
+                            >
+                                <DalgonaDrawer/>
+                                <BrieDrawer/>
+                                <BreadedSalmonSide/>
+                                <MisoSalmon/>
+                                <CrustiniSide/>
+                            </Div>
+                            
+                        </Col>
+                        <Col
+                            d={{xs: "none", lg: "flex"}}
+                            h="50vw"
+                            w="15vw"
+                            bgImg={frenchCoffee}
+                            bgSize = {{xs: "contain", lg: "cover"}}
+                        >
+                            
+                        </Col>
+                    </Row>
+                    <Row
+                        h="auto"
+                        w="70vw"
                         p="1vw"
                         d="flex"
                         bg="darkBg100"

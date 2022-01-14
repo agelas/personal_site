@@ -45,11 +45,13 @@ class DalgonaDrawer extends React.Component {
         const {showSideDrawer} = this.state;
         
         return(
-            <Div>
+            <Div d="flex" justify={{xs: "center", lg: "flex-start"}}>
                 <Button
                     bg="warning600"
                     hoverbg="warning700"
                     m={{b: "1rem"}}
+                    textSize={{xs:"caption", md: "body"}}
+                    textWeight={{ xs: '400', md: '500' }}
                     rounded="circle"
                     onClick={() =>
                         this.setState({

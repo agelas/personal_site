@@ -55,12 +55,14 @@ class BrieDrawer extends React.Component {
         const {showSideDrawer} = this.state;
         
         return(
-            <Div>
+            <Div d="flex" justify={{xs: "center", lg: "flex-start"}}>
                 <Button
                     bg="success800"
                     hoverbg="sucess900"
                     rounded="circle"
                     m={{b: "1rem"}}
+                    textSize={{xs:"caption", md: "body"}}
+                    textWeight={{ xs: '400', md: '500' }}
                     onClick={() =>
                         this.setState({
                             showSideDrawer: true,

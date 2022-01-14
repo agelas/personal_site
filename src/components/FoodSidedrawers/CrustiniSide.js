@@ -61,12 +61,14 @@ class CrustiniSide extends React.Component {
         const {showSideDrawer} = this.state;
         
         return(
-            <Div>
+            <Div d="flex" justify={{xs: "center", lg: "flex-start"}}>
                 <Button
                     bg="bready"
                     hoverbg="warning700"
                     m={{b: "1rem"}}
                     rounded="circle"
+                    textSize={{xs:"caption", md: "body"}}
+                    textWeight={{ xs: '400', md: '500' }}
                     onClick={() =>
                         this.setState({
                             showSideDrawer: true,
